@@ -3,6 +3,14 @@ import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:google_fonts/google_fonts.dart';
+
+class HomeTheme {
+  static const textColor0 = Colors.blue;
+  static const font = Colors.blue;
+  // static const textColor0 = Colors.blue;
+  // static const textColor0 = Colors.blue;
+}
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -28,7 +36,12 @@ class Home extends StatelessWidget {
                 height: 50,
                 color: Colors.blue,
               ),
-              const Text('Home Page'),
+              Text(
+                'Home Page',
+                style: GoogleFonts.aBeeZee(
+                  color: HomeTheme.textColor0,
+                ),
+              ),
             ],
           ),
         ),
